@@ -1,0 +1,99 @@
+/* CSS File: styles.css */
+
+:root {
+    --gradient-start: #6069b9;
+    --gradient-middle: #5b59e4;
+    --gradient-end: #4a91ca;
+}
+
+body.professional-bg {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-middle), var(--gradient-end));
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #FFFFFF; /* Ensures text is clearly visible */
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+    color: #FFFFFF;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #FFCA28;
+}
+
+.logout-btn {
+    background: rgba(255, 193, 7, 0.3);
+    color: #FFCA28;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+
+.logout-btn:hover {
+    background: rgba(255, 193, 7, 0.5);
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #FFFFFF;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFCA28;
+    margin-bottom: 1rem;
+}
+
+.stat-card h3 {
+    color: #FFCA28;
+    margin-bottom: 0.5rem;
+}
+
+.chart-container {
+    height: 200px;
+    margin-top: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.emergency-btn {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    background-color: #D32F2F;
+    color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s;
+}
+
+.emergency-btn:hover {
+    transform: scale(1.1);
+}
